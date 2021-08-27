@@ -1,0 +1,56 @@
+﻿@using SinglePage.DTO
+@model AllTableDTO
+
+@{
+    ViewData["Title"] = "Ne Yapıyoruz ?";
+}
+<!-- Ne Yapıyoruz Başlangıcı -->
+<section id="WhatWeDo">
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model.whatWeDoDTOs)
+            {
+                <div class="col-md-12 text-center">
+                    <h2 class="pt-5">@item.WhatWeDoTitle</h2>
+                    <p>
+                        <span style="color:white">@item.WhatWeDoDescription</span>
+                    </p>
+                    <div class="col-md-6 text-center mx-auto">
+                        <a href="#" data-toggle="modal" data-target="#PlayModal">
+                            <i class="far fa-play-circle"></i>
+                        </a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+<!-- Ne Yapıyoruz Sonu -->
+<!-- Ne Yapıyoruz Modal Başlangıcı -->
+<div id="PlayModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            @foreach (var item in Model.whatWeDoDTOs)
+            {
+                <div class="modal-header">
+                    <h4 class="modal-title">@item.WhatWeDoTitle</h4>
+                    <button id="btnclose" type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted">
+                        <em></em>
+                    </p>
+                    <p>
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <iframe class="embed-responsive-item" src="@item.WhatWeDoLink" allow="autoplay" ;></iframe>
+                        </div>
+                    </p>
+                </div>
+            }
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-primary text-center mx-auto" data-dismiss="modal">Pencereyi Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Ne Yapıyoruz Modal Sonu -->

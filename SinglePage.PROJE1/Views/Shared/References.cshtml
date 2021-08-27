@@ -1,0 +1,32 @@
+﻿@using SinglePage.DTO
+@model AllTableDTO
+@{
+    ViewData["Title"] = "Referanslarımız";
+}
+<!-- Referanslarımız Başlangıcı -->
+<section id="References" class="py-auto">
+    <div class="container-fluid ">
+        <div class="row ">
+            @foreach (var item in Model.referencesDTOs)
+            {
+                <div class="col-md-3">
+                    <a href="@Url.Content(item.ReferencePhoto)" data-lightbox="image-1" data-title="@item.ReferenceTitle">
+                        <div class="imageContainer">
+                            <img src="@Url.Content(item.ReferencePhoto)" class="img-fluid">
+                            <div class="imageOverlay">
+                                <div class="imagetext">
+                                    <i class="fas fa-search-plus" style="margin-left:40px;"></i>
+                                    <h4>@item.ReferenceTitle</h4>
+                                    <P>
+                                        <em>@item.ReferenceCategory</em>
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+<!-- Referanslarımız Sonu -->

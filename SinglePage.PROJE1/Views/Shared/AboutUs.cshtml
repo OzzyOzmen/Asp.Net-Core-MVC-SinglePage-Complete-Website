@@ -1,0 +1,24 @@
+﻿@using SinglePage.DTO
+@model AllTableDTO
+@{
+    ViewData["Title"] = "Hakkımızda";
+}
+<!--Hakkımızda Başlangıcı-->
+<section id="AboutUs">
+        <div class="container">
+            @foreach (var item in Model.aboutUsDTOs)
+            {
+                <div class="row mt-5">
+                    <div class="col-md-6 hakkimizdaImageSection ">
+                        <img src="@Url.Content(item.AboutUsPhoto)" class="img-fluid" alt="Hakkımızda" id="AboutUsPhoto" name="AboutUsPhoto">
+                    </div>
+                    <div class="col-md-6 hakkimizdaYaziSection">
+                        <h2 class="mb-5" id="AboutUsTitle" name="AboutUsTitle">@item.AboutUsTitle</h2>
+                        <p id="AboutUsTitle" name="AboutUsTitle">@item.AboutUsDescription</p>
+                        <button type="button" class="btn btn-outline-primary">Referanslara Bak</button>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+<!--Hakkımızda Sonu-->

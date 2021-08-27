@@ -1,0 +1,216 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.PROJE1/SinglePage.PROJE1.csproj": {}
+  },
+  "projects": {
+    "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.DTO/SinglePage.DTO.csproj": {
+      "restore": {
+        "projectUniqueName": "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.DTO/SinglePage.DTO.csproj",
+        "projectName": "SinglePage.DTO",
+        "projectPath": "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.DTO/SinglePage.DTO.csproj",
+        "packagesPath": "/Users/ozzyozmencelik/.nuget/packages/",
+        "projectStyle": "PackagesConfig",
+        "configFilePaths": [
+          "/Users/ozzyozmencelik/.config/NuGet/NuGet.Config"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        },
+        "packagesConfigPath": "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.DTO/packages.config"
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.ORM/SinglePage.ORM.csproj": {
+      "restore": {
+        "projectUniqueName": "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.ORM/SinglePage.ORM.csproj",
+        "projectName": "SinglePage.ORM",
+        "projectPath": "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.ORM/SinglePage.ORM.csproj",
+        "packagesPath": "/Users/ozzyozmencelik/.nuget/packages/",
+        "projectStyle": "PackagesConfig",
+        "configFilePaths": [
+          "/Users/ozzyozmencelik/.config/NuGet/NuGet.Config"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        },
+        "packagesConfigPath": "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.ORM/packages.config"
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.PROJE1/SinglePage.PROJE1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.PROJE1/SinglePage.PROJE1.csproj",
+        "projectName": "SinglePage.PROJE1",
+        "projectPath": "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.PROJE1/SinglePage.PROJE1.csproj",
+        "packagesPath": "/Users/ozzyozmencelik/.nuget/packages/",
+        "outputPath": "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.PROJE1/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ozzyozmencelik/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.DTO/SinglePage.DTO.csproj": {
+                "projectPath": "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.DTO/SinglePage.DTO.csproj"
+              },
+              "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.ORM/SinglePage.ORM.csproj": {
+                "projectPath": "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.ORM/SinglePage.ORM.csproj"
+              },
+              "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.SERVICE/SinglePage.SERVICE.csproj": {
+                "projectPath": "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.SERVICE/SinglePage.SERVICE.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.8, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.REPOSITORY/SinglePage.REPOSITORY.csproj": {
+      "restore": {
+        "projectUniqueName": "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.REPOSITORY/SinglePage.REPOSITORY.csproj",
+        "projectName": "SinglePage.REPOSITORY",
+        "projectPath": "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.REPOSITORY/SinglePage.REPOSITORY.csproj",
+        "packagesPath": "/Users/ozzyozmencelik/.nuget/packages/",
+        "projectStyle": "PackagesConfig",
+        "configFilePaths": [
+          "/Users/ozzyozmencelik/.config/NuGet/NuGet.Config"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.DTO/SinglePage.DTO.csproj": {
+                "projectPath": "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.DTO/SinglePage.DTO.csproj"
+              },
+              "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.ORM/SinglePage.ORM.csproj": {
+                "projectPath": "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.ORM/SinglePage.ORM.csproj"
+              }
+            }
+          }
+        },
+        "packagesConfigPath": "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.REPOSITORY/packages.config"
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.SERVICE/SinglePage.SERVICE.csproj": {
+      "restore": {
+        "projectUniqueName": "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.SERVICE/SinglePage.SERVICE.csproj",
+        "projectName": "SinglePage.SERVICE",
+        "projectPath": "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.SERVICE/SinglePage.SERVICE.csproj",
+        "packagesPath": "/Users/ozzyozmencelik/.nuget/packages/",
+        "projectStyle": "PackagesConfig",
+        "configFilePaths": [
+          "/Users/ozzyozmencelik/.config/NuGet/NuGet.Config"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.DTO/SinglePage.DTO.csproj": {
+                "projectPath": "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.DTO/SinglePage.DTO.csproj"
+              },
+              "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.ORM/SinglePage.ORM.csproj": {
+                "projectPath": "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.ORM/SinglePage.ORM.csproj"
+              },
+              "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.REPOSITORY/SinglePage.REPOSITORY.csproj": {
+                "projectPath": "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.REPOSITORY/SinglePage.REPOSITORY.csproj"
+              }
+            }
+          }
+        },
+        "packagesConfigPath": "/Users/ozzyozmencelik/Downloads/SinglePage/SinglePage.SERVICE/packages.config"
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    }
+  }
+}

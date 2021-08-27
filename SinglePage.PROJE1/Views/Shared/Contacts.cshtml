@@ -1,0 +1,118 @@
+﻿@using SinglePage.DTO
+@model AllTableDTO
+@{
+    ViewData["Title"] = "İletişim";
+}
+<!-- İletişim Başlangıcı -->
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    <section id="Contacts" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 iletisim1">
+                    <h2>Bizimle İletişime Geçin</h2>
+                    <p class="text-muted">
+                        <em>
+                            Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir.
+                        </em>
+                    </p>
+                    <h4>Adres</h4>
+                    <p class="text-muted">
+                        <em>
+                            Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir.
+                        </em>
+                    </p>
+                    <h4>Email</h4>
+                    <p class="text-muted">
+                        <em>
+                            email@mail.com
+                        </em>
+                    </p>
+                    <h4>Telefon</h4>
+                    <p class="text-muted">
+                        <em>
+                            +90 000 00 00
+                        </em>
+                    </p>
+                    <div class="d-flex flex-row">
+                        <div class="p-2">
+                            <a href="#">
+                                <i class="fab fa-facebook fa-2x"></i>
+                            </a>
+                        </div>
+                        <div class="p-2">
+                            <a href="#">
+                                <i class="fab fa-twitter fa-2x"></i>
+                            </a>
+                        </div>
+                        <div class="p-2">
+                            <a href="#">
+                                <i class="fab fa-linkedin fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 iletisim2">
+                    <h3>Bize Mail Atın</h3>
+                    <form>
+                        <div class="form-group">
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroup" name="ContactName" placeholder="Adınız">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroup" name="ContactSurName" placeholder="Soyadınız">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-phone "></i>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroup" name="ContactPhone" placeholder="Telefon numaranız">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroup" name="ContactEmail" placeholder="Mail Adresiniz">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-pencil-alt"></i>
+                                    </div>
+                                </div>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" name="ContactMessage" rows="3" style="resize:none;"></textarea>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-outline-primary">Gönder</button>
+                            <button type="button" class="btn btn-outline-danger">Temizle</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+<!-- İletişim Sonu -->

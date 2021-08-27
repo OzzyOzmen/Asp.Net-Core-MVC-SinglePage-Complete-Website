@@ -1,0 +1,29 @@
+﻿@using SinglePage.DTO
+@model AllTableDTO
+ 
+@{
+    ViewData["Title"] = "Hizmetlerimiz";
+}
+<!-- Hizmetlerimiz Başlangıcı -->
+<section id="Services" class="py-5">
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model.servicesDTOs)
+            {
+                <div class="col-md-6 ">
+                    <div class="yazidivi text-center">
+                        <i class="fab fa-linux fa-4x"></i>
+                        <h2>@item.ServicesTitle</h2>
+                        <p>@item.ServicesDescription</p>
+                    </div>
+                </div>
+                <div class="col-md-6 pt-5">
+                    <div class="hizmetresim">
+                        <img src="@Url.Content(item.ServicesPhoto)" class="img-fluid ">
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+<!-- Hizmetlerimiz Sonu -->
