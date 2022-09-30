@@ -20,9 +20,13 @@ namespace SinglePage.PROJE1.Controllers
         TeamsService teamsService;
         UsersService usersService;
         WhatWeDoService whatWeDoService;
-
+         
+         static object _lockobject = new object();
+        
         public HomeController()
         {
+         lock (_lockobject)
+          {
             if (aboutUsService==null)
             {
                 aboutUsService = new AboutUsService();
@@ -62,6 +66,7 @@ namespace SinglePage.PROJE1.Controllers
             {
                 whatWeDoService = new WhatWeDoService();
             }
+           }
         }
 
         [HttpGet]
